@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Seung Hyun Jin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Seung Hyun Jin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/headshot_copy.png">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Seung Hyun Jin</h1>
+        <p class="section__text__p2">Machine Learning Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/assets/SeungHyun_resforport.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/seung-hyun-jin-341671294/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/seunghjin'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Machine Learning lab assistant</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Computer Science & Math<br />Duke Univeristy</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I'm currently pursuing a B.S. in Math, Computer Science with a concentration in Artificial Intelligence/Machine Learning and a Minor in Computational Biology and Bioinformatics. I am interested in the multitude of applications of machine learning and it's potential in the medical field and other areas. My work revolves around applications of machine learning in spatial-omics, cells, worm analysis, and more. My main skills include Java, Python, Pytorch, Scikit-Learn, and Data Analysis. I am a dedicated learner, once I find a topic interesting I try my best to learn all about it and be proficient at the skills required.
+            </p>
+            
+            <div class="logo-container">
+              <img
+                src="./assets/Duke_University_seal.png"
+                alt="Duke Logo"
+              />
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Relevant</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          
+            <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning Assistant for Dr. John Hickey</h2>
+            <li>Extending Scikit-learn frameworks to improve accuracy and performance on HDBScans and K-Nearest-Neighbors
+            </li>
+            <li>Training machine learning models to capture occurrences multicellular structures
+            </li>
+            <li>Analyzing consortia of cell spatial-omics datasets
+            </li>
+            <li>Merged existing machine learning technologies to explore cell neighborhoods in between the colon and intestine
+            </li>
+
+            <div class="article-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://sites.google.com/view/john-w-hickey/home'"
+            >
+              Our Work!
+            </button>
+<!-- fill in -->
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning Assistant for Dr. Ashutosh Kotwal</h2>
+              <li>Network training on animal skeletons to predict all possible movements</li>
+              <li>Applying Fourier Transformations to blueprint higher dimension worm positions</li>
+              <li>Translated data into wave and frequency interpretation for further numerical analysis</li>
+            <div class="article-container">
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://scholars.duke.edu/person/ashutosh.kotwal/research'"
+            >
+              Our Work!
+            </button>
+<!-- fill in -->
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">FullStack Developer for Lunch Bunch LLC</h2>
+            <li>Developed a website for a startup aimed to improve sustainability in lunch trays
+            </li>
+            <li>Automated data scraping tool to retrieve analytics of potential client backgrounds
+            </li>
+            <li>Implemented MongoDB database for users and OpenAI chatbot for customer service and satisfaction
+            </li>
+            <div class="article-container">
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href=''" 
+              <!-- too add -->
+            >
+              Web!
+            </button>
+<!-- fill in -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cell_art.png"
+                alt="Hierarchical-Tissue-Unit-Annotation"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hierarchical Tissue-Unit Annotation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HickeyLab/Hierarchical-Tissue-Unit-Annotation'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nba-logo_2x.png"
+                alt="NBAmatch"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NBA Match Predictor</h2>
+            <p>
+                ML Model training based on recent seasons. Use of Ridge and Random Forest Classifications 
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/seunghjin/NBAmatchpredictor'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/lunch_bunch_llc_logo.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Lunch Bunch Web</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'" 
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>More on my Github!</p>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sj406@duke.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/seung-hyun-jin-341671294">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
